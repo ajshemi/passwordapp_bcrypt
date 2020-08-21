@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+STEPS TO RUN APP
 
-Things you may want to cover:
+on your terminal enter each step
 
-* Ruby version
+git clone https://github.com/ajshemi/passwordapp_bcrypt.git
 
-* System dependencies
+bundle install
 
-* Configuration
+rails server
 
-* Database creation
+on a browser enter localhost:3000/login
 
-* Database initialization
+or
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+on a browser enter localhost:3000/signup

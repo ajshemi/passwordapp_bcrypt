@@ -12,13 +12,12 @@ class EatersController < ApplicationController
             flash[:errors] = user.errors.full_messages
             redirect_to signup_path
         else 
-            
             #save the id the session automatically login when new eater is creater
             session[:eater_id]=user.id
             redirect_to foods_path
         end
     end
-    
+
     private 
     def user_params
         params.require(:eater).permit(:username,:password,:password_confirmation)

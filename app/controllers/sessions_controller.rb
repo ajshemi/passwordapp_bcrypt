@@ -1,9 +1,7 @@
 class SessionsController < ApplicationController
-    skip_before_action :authorized, only: [:new, :create]
 
   def new
     @errors = flash[:errors]
-    # render :new
   end
 
   def create
