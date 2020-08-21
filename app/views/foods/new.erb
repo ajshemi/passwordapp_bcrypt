@@ -1,0 +1,20 @@
+<h1>Make a food</h1>
+<%= form_for @food, html: { class: "form "} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>  
+  <br>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+  
+  <% if @errors %>
+    <ol class="messages">
+      <% @errors.each do |error| %>
+        <li>
+          <%= error %>
+        </li>
+      <% end %>
+    </ol>
+  <% end %>
+    <br>
+  <%= f.submit %>
+<% end %>

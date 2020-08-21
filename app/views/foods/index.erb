@@ -1,0 +1,10 @@
+<h1>Welcome to the Food List</h1>
+
+<% @foods.each do |food| %>
+    <h3>
+    <%= link_to food.foodname, food_path(food) %>
+    </h3>
+    <em><%= food.category %></em>
+    <%= button_to "delete", food_path(food), :method => :delete %>
+    <hr>
+<%end%>

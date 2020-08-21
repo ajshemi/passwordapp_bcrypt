@@ -1,0 +1,11 @@
+<h1>Make a food</h1>
+
+<%= form_for @garden do |f| %>
+  <%= f.label :foodname, "food" %>
+  <%= f.text_field :foodname %>
+  <br>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+  <br>
+  <%= f.submit %>
+<% end %>
